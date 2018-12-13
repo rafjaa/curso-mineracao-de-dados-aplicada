@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    color: #fff;
+    background: #457fca;
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);
+    background: linear-gradient(to right, #5691c8, #457fca);
+    padding: 15px 0;
+    text-align: center;
+    text-shadow: 1px 1px 5px #555;
+    margin-bottom: 25px;
+    display: block;
+}
+
+#sec_txt{
+    width: calc(49% - 15px);
+    float: left;
+    padding-left: 15px;
+}
+
+#sec_analise{
+    width: calc(49% - 15px);
+    float: right;
+    padding-right: 15px;
+}
+
+#txt_area{
+    width: calc(100% - 20px);
+    height: 75vh;
+    padding: 10px;
+    resize: none;
+}
+
+#chart{
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+}
+
+@media(max-width: 900px){
+    /* Atividade extra */
+}

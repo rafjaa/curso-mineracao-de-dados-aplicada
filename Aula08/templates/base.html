@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Análise de notícias</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./static/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Análise de notícias</h1>
+        </header>
+        
+        <section id="sec_txt">
+            <textarea id="txt_area" placeholder="Digite ou cole a notícia"></textarea>
+        </section>
+
+        <section id="sec_analise">
+            Análise em <strong>tempo real</strong> do texto:
+            <canvas id="chart"></canvas>
+        </section>
+
+        <script src="./static/jquery.js"></script>
+        <script src="./static/Chart.min.js"></script>
+        <script src="./static/script.js"></script>
+    </body>
+</html>
