@@ -28,6 +28,17 @@ def post():
            Prever com predict_proba(X)[:,1]
         4) Jogar o resultado na variável "proba" (abaixo)
 
+
+        Dica: para persistir um modelo treinado, usar a biblioteca joblib:
+
+        from sklearn.externals import joblib
+
+        # Persistir
+        joblib.dump(model, 'model.dat')
+
+        # Carregar
+        model = joblib.load('model.dat')
+
     '''
     proba = 0.95
 
