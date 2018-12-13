@@ -1,6 +1,7 @@
 // Aguarda a página carregar
 function retorno_ajax(resp){
-    console.log(resp);
+    resp = JSON.parse(resp);
+    console.log(resp['proba']);
 
     new Chart($('#chart'), {
         type: 'bar',
@@ -9,7 +10,7 @@ function retorno_ajax(resp){
           datasets: [
             {
               backgroundColor: ['#3e95cd', '#3cba9f'],
-              data: [0.95, 0.05]
+              data: [resp['proba'], 1 - resp['proba']]
             }
           ]
         },

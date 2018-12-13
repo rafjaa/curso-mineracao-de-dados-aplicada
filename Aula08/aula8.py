@@ -9,13 +9,13 @@ app = Flask(__name__)
 
 
 @app.route('/', methods=['GET'])
-def api():
+def home():
     if request.method == 'GET':
         return render_template('base.html')
 
 
 @app.route('/analisa_noticia', methods=['POST'])
-def post():
+def api_analise():
     txt = request.form.get('txt')
     print(txt)
 
